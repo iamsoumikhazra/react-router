@@ -52,7 +52,10 @@ export default function Navbar() {
               <li key={item.name}>
                 <NavLink
                   to={item.href}
-                  className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                  className={({ isActive }) =>
+                    `text-sm font-semibold text-gray-800 ${
+                      isActive ? 'bg-gray-900 rounded px-2 py-1.5 text-white' : ''
+                    }`}
                 >
                   {item.name}
                 </NavLink>
