@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout'
-import {Hero, NewsLetter, Navbar, Footer, Team} from './components/components.index.js'
+import {Hero, NewsLetter, Team} from './components/components.index.js'
 
 
 
@@ -22,9 +22,9 @@ const router = createBrowserRouter([
         element: <Team />
       },
       {
-        path: "/news-letter",
+        path: "/news-letter/",
         element: <NewsLetter />
-      }
+      },
     ]
   }
 ]);
